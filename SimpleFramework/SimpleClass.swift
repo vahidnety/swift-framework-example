@@ -13,10 +13,12 @@ public class SimpleClass: NSObject {
   var message: String
   var object: SFClass = SFClass()
   
+  @objc
   public init(_ newMessage: String) {
     self.message = newMessage
   }
   
+  @objc
   public func printMessage() {
     object.printMessage(self.message)
   }
